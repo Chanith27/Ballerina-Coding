@@ -1,0 +1,24 @@
+import ballerina/io;
+
+public function main() returns error?{
+  #Input First Number
+  io:println("Enter First Number: ");
+  string firstnumber = check io:readln();
+  int num1 = check int:fromString(firstnumber);
+
+  #Input Second Number
+  io:println("Enter Second Number: ");
+  string secondnumber = check io:readln()
+  int num2 = check int:fromString(secondnumber);
+
+  #Input Third Number  
+  io:println("Enter Third Number: ");
+  string thirdnumber = check io:readln();
+  int num3 = check int.fromString(thirdnumber);
+
+  #Calculate Value  
+  int num4 = (num1*num2) / num3;
+
+  #Print Value   
+  io:println("The Final Value is : " + num4);
+}
