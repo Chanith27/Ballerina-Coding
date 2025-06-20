@@ -1,0 +1,7 @@
+import ballerina/io;
+
+public function main() returns error?{
+  io:println("Enter First Number: ");
+  string firstnumber = check io:readln();
+  int num1 = check int:fromString(firstnumber);
+}
